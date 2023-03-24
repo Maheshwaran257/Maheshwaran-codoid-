@@ -1,0 +1,24 @@
+import java.util.Scanner;
+
+public class FibonacciSeries {
+
+	public static void main(String[] args) {
+		int i=0,j=1,n,temp;
+		System.out.println("enter the limit");
+		Scanner sc = new Scanner(System.in);
+		n = sc.nextInt();
+		System.out.println("Fibonacci Series");
+		System.out.println(i);
+		System.out.println(j);
+		for(int m=2;m<n;m++) {
+			temp=i+j;
+			System.out.println(temp);
+			i=j;
+			j=temp;
+			
+		}
+	
+
+	}
+
+}
